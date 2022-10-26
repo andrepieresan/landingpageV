@@ -1,0 +1,28 @@
+.bg-white { 
+    background-color: #12475c;
+}
+.bg-blue {
+    background-color: #28286db7;
+}
+nav {
+    background-color: #d2691e86;
+    font-size: 30px;
+}
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    font-size: 140px;
+    text-align: center;
+}
+p {
+    font-size: 40px;
+    text-align: center;
+}
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+section{
+    min-height: 100vh;
+}
