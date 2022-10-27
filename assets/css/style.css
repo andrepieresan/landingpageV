@@ -1,5 +1,8 @@
 body {
-    background-color: antiquewhite;
+    width: auto;
+    background-image: url('../../img/bg2.svg');
+    background-size: auto;
+    background-position: center center;
 }
 
 p {
@@ -7,20 +10,21 @@ p {
     text-align: center;
 }
 a {
+    font-family: "Audiowide", sans-serif;
     text-decoration: none;
 }
 main {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1280px;
 }
 .bg-white { 
     background-color: #12475c;
 }
 .bg-blue {
-    background-color: #28286db7;
+    background-color: #28286d;
 }
 .menu{
-    background-color: #e68686;
+    background-color: #cf6565;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,15 +37,31 @@ main {
     display: flex;
     justify-content: center;
 }
+ul {
+    padding-inline-start: 0px;
+}
 .menu ul {
     list-style: none;
     display: flex;
 }
-.menu li a { 
-    display: block;
+.menu ul li a { 
     padding: 0.6rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     position: relative;
+}
+.menu li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: #961254;
+    transition: all 300ms ease-in-out;
+}
+.menu li a:hover:after{
+    width: 70%;
+    left: 15%;
 }
 .title-content {
     font-size: 140px;
