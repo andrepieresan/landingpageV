@@ -6,25 +6,28 @@ body {
 }
 
 p {
-    font-size: 40px;
+    font-size: 3rem;
     text-align: center;
 }
 a {
     font-family: "Audiowide", sans-serif;
     text-decoration: none;
 }
+ul {
+    padding-inline-start: 0px;
+}
 main {
     margin: 0 auto;
     max-width: 1280px;
 }
 .bg-white { 
-    background-color: #12475c;
+    background-color: #12475c80;
 }
 .bg-blue {
     background-color: #28286d;
 }
 .menu{
-    background-color: #cf6565;
+    background-color: #d19ddb;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,27 +35,27 @@ main {
     width: 100%;
     border-bottom: 1px solid #324147a4;
 }
+
 .header-content {
     align-items: center;
     display: flex;
     justify-content: center;
 }
-ul {
-    padding-inline-start: 0px;
-}
 .menu ul {
     list-style: none;
     display: flex;
 }
+.menu li { 
+    padding: 0 1rem 0 3rem;
+}
 .menu ul li a { 
-    padding: 0.6rem;
     font-size: 1.5rem;
     position: relative;
 }
 .menu li a::after{
     content: '';
     position: absolute;
-    bottom: 0.3rem;
+    bottom: 0;
     left: 50%;
     width: 0;
     height: 0.2rem;
@@ -60,11 +63,11 @@ ul {
     transition: all 300ms ease-in-out;
 }
 .menu li a:hover:after{
-    width: 70%;
+    width: 75%;
     left: 15%;
 }
 .title-content {
-    font-size: 140px;
+    font-size: 7rem;
     text-align: center;
 }
 .sector{
